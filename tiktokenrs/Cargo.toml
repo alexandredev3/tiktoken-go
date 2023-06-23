@@ -1,0 +1,17 @@
+[package]
+name = "tiktokenrs"
+version = "0.1.0"
+edition = "2021"
+
+# Since this project is a lib, we need to define this:
+[lib]
+name = "tiktoken"
+crate-type = ["staticlib"] # This is a static lib
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+libc = "0.2.146"
+parking_lot = "0.12.1"
+tiktoken-rs = "0.4.4"
